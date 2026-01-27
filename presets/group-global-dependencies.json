@@ -2,25 +2,24 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackageNames": [
-        "^@1024pix/",
-        "/^(node|cimg/node)$/",
-        "!@1024pix/epreuves-components"
-      ],
+      "matchPackageNames": ["/^(node|cimg/node)$/"],
+      "groupName": "node",
+      "rangeStrategy": "bump",
+      "versioning": "node",
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
       "automerge": true
     },
     {
-      "matchPackageNames": ["/^(node|cimg/node)$/"],
-      "groupName": "node",
-      "rangeStrategy": "bump",
-      "versioning": "node"
-    },
-    {
       "matchPackageNames": ["/^@1024pix//"],
       "minimumReleaseAge": "0",
       "rangeStrategy": "bump"
+    },
+    {
+      "matchPackageNames": ["^@1024pix/", "!@1024pix/epreuves-components"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
+      "automerge": true
     },
     {
       "matchManagers": ["npm"],
@@ -31,7 +30,7 @@
         "./admin/package.json",
         "./orga/package.json",
         "./certif/package.json",
-        "./mon-pix/package.json-pix",
+        "./mon-pix/package.json",
         "./junior/package.json"
       ]
     },
@@ -42,7 +41,7 @@
         "./admin/package.json",
         "./orga/package.json",
         "./certif/package.json",
-        "./mon-pix/package.json-pix",
+        "./mon-pix/package.json",
         "./junior/package.json"
       ]
     },
@@ -53,7 +52,7 @@
         "./admin/package.json",
         "./orga/package.json",
         "./certif/package.json",
-        "./mon-pix/package.json-pix",
+        "./mon-pix/package.json",
         "./junior/package.json"
       ]
     },
@@ -64,7 +63,7 @@
         "./admin/package.json",
         "./orga/package.json",
         "./certif/package.json",
-        "./mon-pix/package.json-pix",
+        "./mon-pix/package.json",
         "./junior/package.json"
       ]
     },
@@ -76,7 +75,7 @@
         "./admin/package.json",
         "./orga/package.json",
         "./certif/package.json",
-        "./mon-pix/package.json-pix",
+        "./mon-pix/package.json",
         "./junior/package.json"
       ]
     },
@@ -87,7 +86,7 @@
         "./admin/package.json",
         "./orga/package.json",
         "./certif/package.json",
-        "./mon-pix/package.json-pix",
+        "./mon-pix/package.json",
         "./junior/package.json"
       ]
     },
