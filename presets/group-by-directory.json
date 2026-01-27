@@ -3,6 +3,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["!/^(node|npm|cimg/node|nginx|redis|postgres)$/"],
+      "matchDepNames": ["/eslint/"],
       "additionalBranchPrefix": "{{#if parentDir}}{{parentDir}}{{else}}dossier-racine{{/if}}-",
       "commitMessageSuffix": "{{#if parentDir}}({{parentDir}}){{else}}(dossier racine){{/if}}"
     },

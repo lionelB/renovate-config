@@ -35,8 +35,8 @@
     },
     {
       "matchPackageNames": ["@1024pix/pix-ui"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "pix-ui",
+      "matchUpdateTypes": ["major"],
+      "groupName": "turbo-pix-ui",
       "matchFileNames": [
         "admin/package.json",
         "orga/package.json",
