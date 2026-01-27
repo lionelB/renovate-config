@@ -27,11 +27,11 @@
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "pix-ui",
       "matchFileNames": [
-        "./admin/package.json",
-        "./orga/package.json",
-        "./certif/package.json",
-        "./mon-pix/package.json",
-        "./junior/package.json"
+        "admin/package.json",
+        "orga/package.json",
+        "certif/package.json",
+        "mon-pix/package.json",
+        "junior/package.json"
       ]
     },
     {
