@@ -22,7 +22,18 @@
       "automerge": true
     },
     {
-      "matchManagers": ["npm"],
+      "matchDepNames": ["embroider"],
+      "matchUpdateTypes": ["major"],
+      "matchFileNames": [
+        "admin/package.json",
+        "orga/package.json",
+        "certif/package.json",
+        "mon-pix/package.json",
+        "junior/package.json"
+      ],
+      "groupName": "EMBROIDER_TURBO"
+    },
+    {
       "matchPackageNames": ["@1024pix/pix-ui"],
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "pix-ui",
@@ -32,7 +43,8 @@
         "certif/package.json",
         "mon-pix/package.json",
         "junior/package.json"
-      ]
+      ],
+      "addLabels": ["pix-ui"]
     },
     {
       "matchPackageNames": ["/^@1024pix/ember-testing-library$/"],
