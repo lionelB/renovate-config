@@ -2,6 +2,16 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "matchPackageNames": [
+        "^@1024pix/",
+        "/^(node|cimg/node)$/",
+        "!@1024pix/epreuves-components"
+      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["auto-bump", ":rocket: Ready to Merge"],
+      "automerge": true
+    },
+    {
       "matchPackageNames": ["/^(node|cimg/node)$/"],
       "groupName": "node",
       "rangeStrategy": "bump",
@@ -16,22 +26,71 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["@1024pix/pix-ui"],
       "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "pix-ui"
+      "groupName": "pix-ui",
+      "matchFileNames": [
+        "./admin/package.json",
+        "./orga/package.json",
+        "./certif/package.json",
+        "./mon-pix/package.json-pix",
+        "./junior/package.json"
+      ]
     },
     {
       "matchPackageNames": ["/^@1024pix/ember-testing-library$/"],
-      "groupName": "pix-ember-testing-library"
+      "groupName": "pix-ember-testing-library",
+      "matchFileNames": [
+        "./admin/package.json",
+        "./orga/package.json",
+        "./certif/package.json",
+        "./mon-pix/package.json-pix",
+        "./junior/package.json"
+      ]
     },
     {
       "matchPackageNames": ["/^@1024pix/stylelint-config$/"],
-      "groupName": "pix-stylelint-config"
+      "groupName": "pix-stylelint-config",
+      "matchFileNames": [
+        "./admin/package.json",
+        "./orga/package.json",
+        "./certif/package.json",
+        "./mon-pix/package.json-pix",
+        "./junior/package.json"
+      ]
     },
     {
       "matchPackageNames": ["/^@1024pix/eslint-config$/"],
-      "groupName": "pix-eslint-config"
+      "groupName": "pix-eslint-config",
+      "matchFileNames": [
+        "./admin/package.json",
+        "./orga/package.json",
+        "./certif/package.json",
+        "./mon-pix/package.json-pix",
+        "./junior/package.json"
+      ]
     },
-    { "matchPackageNames": ["/^sinon$/"], "groupName": "sinon" },
-    { "matchPackageNames": ["/^qunit$/"], "groupName": "qunit" },
+    {
+      "matchPackageNames": ["/^sinon$/"],
+      "groupName": "sinon",
+      "matchFileNames": [
+        "./api",
+        "./admin/package.json",
+        "./orga/package.json",
+        "./certif/package.json",
+        "./mon-pix/package.json-pix",
+        "./junior/package.json"
+      ]
+    },
+    {
+      "matchPackageNames": ["/^qunit$/"],
+      "groupName": "qunit",
+      "matchFileNames": [
+        "./admin/package.json",
+        "./orga/package.json",
+        "./certif/package.json",
+        "./mon-pix/package.json-pix",
+        "./junior/package.json"
+      ]
+    },
     {
       "matchPackageNames": ["/^nginx$/"],
       "matchManagers": [
